@@ -18,7 +18,7 @@ import com.breno.apicastgroup.entities.enums.Profile;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-@Table(name = "USER")
+@Table(name = "TB_USER")
 public class User implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -32,7 +32,7 @@ public class User implements Serializable {
 	private String password;
 	
 	@ElementCollection(fetch=FetchType.EAGER)
-	@CollectionTable(name="PROFILES")
+	@CollectionTable(name="TB_PROFILES")
 	private Set<Integer> profiles = new HashSet<>();
 	
 	public User() {	

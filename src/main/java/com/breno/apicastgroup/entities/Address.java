@@ -11,7 +11,7 @@ import com.breno.apicastgroup.entities.enums.State;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-@Table(name = "EMPLOYEE_ADDRESS")
+@Table(name = "TB_EMPLOYEE_ADDRESS")
 public class Address {
 	
 	@Id

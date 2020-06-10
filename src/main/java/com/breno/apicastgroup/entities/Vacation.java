@@ -10,7 +10,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "EMPLOYEE_VACATION")
+@Table(name = "TB_EMPLOYEE_VACATION")
 public class Vacation {
 	
 	@Id

@@ -13,7 +13,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "SQUAD")
+@Table(name = "TB_SQUAD")
 public class Squad {
 
 	@Id
@@ -22,7 +22,7 @@ public class Squad {
 	private String name;
 
 	@ManyToMany
-	@JoinTable(name = "SQUAD_EMPLOYEE",
+	@JoinTable(name = "TB_SQUAD_EMPLOYEE",
 	joinColumns = @JoinColumn(name = "squad_id"),
 	inverseJoinColumns = @JoinColumn(name = "employee_id")
 )
